@@ -12,11 +12,13 @@ float main()
     scanf("%d", &vlr2);
      
     int soma = vlr1 + vlr2;
+    int subtração = vlr1 - vlr2;
     int multi = vlr1 * vlr2;
-    int divisao = vlr1 / vlr2;
+    float divisao = vlr1 / vlr2;
     
     printf("%d + %d = %d\n", vlr1, vlr2, soma);
+    printf("%d + %d = %d\n", vlr1, vlr2, subtração);
     printf("%d x %d = %d\n", vlr1, vlr2, multi);
-    printf("%d / %d = %d\n", vlr1, vlr2, divisao);
+    printf("%d / %d = %f\n", vlr1, vlr2, divisao);
 
 }
