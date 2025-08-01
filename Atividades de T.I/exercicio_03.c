@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-float main()
+void main()
 {
     float nota1;
     float nota2;
