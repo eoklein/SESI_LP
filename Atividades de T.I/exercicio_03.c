@@ -17,5 +17,5 @@ float main()
     
     float Media = (nota1 + nota2 + nota3) / 3;
     
-    printf("A sua média é: %f", Media);
+    printf("A sua média é: %.2f", Media);
 }
