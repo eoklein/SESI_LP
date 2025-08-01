@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+void main()
 {
     float vlr1;
     float vlr2;
