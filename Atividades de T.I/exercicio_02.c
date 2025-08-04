@@ -2,14 +2,14 @@
 
 void main()
 {
-    float vlr1;
-    float vlr2;
+    int vlr1;
+    int vlr2;
     
     printf("Digite o valor do primeiro numero: ");
-    scanf("%f", &vlr1);
+    scanf("%d", &vlr1);
     
     printf("Digite o valor do segundo numero: ");
-    scanf("%f", &vlr2);
+    scanf("%d", &vlr2);
      
     int soma = vlr1 + vlr2;
     
