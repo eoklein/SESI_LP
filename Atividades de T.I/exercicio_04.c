@@ -4,7 +4,7 @@ void main()
 {
     float cm;
     
-    printf("Digite a quantidade de cm: ");
+    printf("Digite a quantidade de centimeros: ");
     scanf("%f", &cm);
     
     float Metros = cm * 100;
