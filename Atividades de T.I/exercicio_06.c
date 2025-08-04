@@ -17,6 +17,6 @@ int main()
     
     float ganhos = salario * meses;
     
-    printf("funcionario %s ganhou R$ %f em %d meses", nome, ganhos, meses);
+    printf("funcionario %s ganhou R$ %.2f em %d meses", nome, ganhos, meses);
 
 }
