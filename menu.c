@@ -1,57 +1,40 @@
 #include <stdio.h>
 
 // Funções
+
+float chamar() {
+    float n;
+    printf("Digite o valor: ");
+    scanf("%f", &n);
+    return n;
+}
+
 float somar() {
-    float n1, n2;
-    printf("Digite o primeiro número: ");
-    scanf("%f", &n1);
-    printf("Digite o segundo número: ");
-    scanf("%f", &n2);
+    float n1 = chamar();
+    float n2 = chamar();
     return n1 + n2;
 }
 
 float subtrair() {
-    float n1, n2;
-    printf("Digite o primeiro número: ");
-    scanf("%f", &n1);
-    printf("Digite o segundo número: ");
-    scanf("%f", &n2);
+    float n1 = chamar();
+    float n2 = chamar();
     return n1 - n2;
 }
 
 float multiplicar() {
-    float n1, n2;
-    printf("Digite o primeiro número: ");
-    scanf("%f", &n1);
-    printf("Digite o segundo número: ");
-    scanf("%f", &n2);
+    float n1 = chamar();
+    float n2 = chamar();
     return n1 * n2;
 }
 
 float dividir() {
-    float n1, n2;
-    printf("Digite o primeiro número: ");
-    scanf("%f", &n1);
-    printf("Digite o segundo número: ");
-    scanf("%f", &n2);
+    float n1 = chamar();
+    float n2 = chamar();
     if (n2 == 0) {
         printf("Erro: divisão por zero!\n");
         return 0;
     }
     return n1 / n2;
-}
-
-float imc() {
-    float peso, altura;
-    printf("Digite seu peso: ");
-    scanf("%f", &peso);
-    printf("Digite sua altura: ");
-    scanf("%f", &altura);
-    if (altura == 0) {
-        printf("Erro: altura inválida!\n");
-        return 0;
-    }
-    return peso / (altura * altura);
 }
 
 
@@ -66,31 +49,27 @@ int main() {
         printf(" 2 - Subtrair\n");
         printf(" 3 - Multiplicar\n");
         printf(" 4 - Dividir\n");
-        printf(" 5 - IMC\n");
         printf(" -----------------------------------------------\n");
-        printf(" 6 - Sair\n");
+        printf(" 5 - Sair\n");
         printf("================================================\n");
 
-        printf("Escolha a opção [1,2,3,4,5,6]: ");
+        printf("Escolha a opção [1,2,3,4,5]: ");
         scanf("%d", &menu);
 
         switch(menu) {
             case 1:
-                printf("Resultado: %.2f\n", somar());
+                printf("Resultado: %.2f\n\n", somar());
                 break;
             case 2:
-                printf("Resultado: %.2f\n", subtrair());
+                printf("Resultado: %.2f\n\n", subtrair());
                 break;
             case 3:
-                printf("Resultado: %.2f\n", multiplicar());
+                printf("Resultado: %.2f\n\n", multiplicar());
                 break;
             case 4:
-                printf("Resultado: %.2f\n", dividir());
+                printf("Resultado: %.2f\n\n", dividir());
                 break;
             case 5:
-                printf("Resultado: %.2f\n", imc());
-                break;
-            case 6:
                 printf("Saindo...\n");
                 return 0;
             default:
